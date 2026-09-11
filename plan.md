@@ -616,7 +616,7 @@ decisions.** Nothing about the semantics changes; only the propose stage moves.
 
 ### 5.1 Ground rules
 
-- **Zero build.** `index.html` + native ES modules (`import` / `export`), served
+- **Zero build.** `paper.html` + native ES modules (`import` / `export`), served
   statically by `./no3sieve serve` (which also sets COOP/COEP so
   `SharedArrayBuffer` is available). No bundler, no transpiler, no install step, no
   framework mandated; a module may be swapped for a wasm-backed one without
@@ -900,7 +900,7 @@ Each milestone has a demo, an acceptance test, and a written note in
 
 Repo layout, `package.json` (zero deps, `"type": "module"`), CI (`node --check`,
 `node --test`, vendored lint), the config object + canonical-JSON hashing, artifact
-writers, JSON Schemas, `./no3sieve serve` + an `index.html` that renders a
+writers, JSON Schemas, `./no3sieve serve` + an `paper.html` that renders a
 hard-coded point list on a pan/zoom canvas (walking skeleton, both ends).
 **Accept:** `./no3sieve --version`; an empty run writes a schema-valid manifest; the
 page loads that manifest and draws nothing, correctly; `node --test` passes on a
